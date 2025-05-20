@@ -1,0 +1,297 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+<link rel="manifest" href="assets/site.webmanifest">
+<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+    /* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #4f46e5, #9333ea); /* Indigo to purple */
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #4338ca, #7e22ce); /* Darker gradient on hover */
+}
+  </style>
+</head>
+    <body class="bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-4 text-center">
+    <h1 data-aos="fade-up" class="text-3xl font-bold">Welcome to My Portfolio</h1>
+
+
+
+<nav class="bg-gray-800">
+  <ul class="flex justify-center gap-4 p-4 m-0 list-none">
+    <li><a href="#about" class="text-white hover:bg-purple-900 hover:text-white px-3 py-2 rounded-lg transition-all duration-300"><i class="fas fa-user mr-2"></i>About Me</a></li>
+    <li><a href="#achievements" class="text-white hover:bg-purple-900 hover:text-white px-3 py-2 rounded-lg transition-all duration-300"><i class="fas fa-trophy mr-2"></i>Achievements</a></li>
+    <li><a href="#goals" class="text-white hover:bg-purple-900 hover:text-white px-3 py-2 rounded-lg transition-all duration-300"><i class="fas fa-bullseye mr-2"></i>Future Goals</a></li>
+    <li><a href="#personal" class="text-white hover:bg-purple-900 hover:text-white px-3 py-2 rounded-lg transition-all duration-300"><i class="fas fa-heart mr-2"></i>Personal Side</a></li>
+    <li><a href="#contact" class="text-white hover:bg-purple-900 hover:text-white px-3 py-2 rounded-lg transition-all duration-300"><i class="fas fa-envelope mr-2"></i>Contact</a></li>
+   <!-- Dark Mode Toggle -->
+<div class="flex items-center gap-2">
+  <i id="theme-icon" class="fas fa-sun text-yellow-400 text-xl transition duration-300"></i>
+  
+  <label for="theme-toggle" class="relative inline-block w-12 h-6">
+    <input type="checkbox" id="theme-toggle" class="opacity-0 w-0 h-0">
+    <span class="absolute cursor-pointer top-0 left-0 right-0 bottom-0 bg-gray-300 dark:bg-gray-600 rounded-full transition duration-300"></span>
+    <span class="absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow transform transition duration-300 dark:translate-x-6"></span>
+  </label>
+</div>
+
+
+</ul>
+</nav>
+
+  </header>
+  <section id="welcome" class="bg-purple-300 text-center py-12 px-6 rounded-xl max-w-4xl mx-auto my-6 shadow-md">
+  <h2 class="text-3xl font-bold mb-4">Welcome to My Digital World!</h2>
+
+  <p class="text-lg mb-8 max-w-2xl mx-auto">
+    I'm truly glad you're here! This portfolio is a glimpse into my journey—where I’ve been, what I’ve learned,
+    and the exciting road ahead. I believe in continuous learning, creativity, and making a positive impact through technology. Dive in and explore!
+  </p>
+
+  <div data-aos="zoom-in" class="flex flex-col items-center gap-6">
+    <!-- Profile Image -->
+    <img src="assets/Manish.jpg" alt="My Photo" class="w-40 h-40 object-cover rounded-full border-4 border-white shadow-lg" />
+
+    <!-- Video Section -->
+    <video controls width="400" class="rounded-xl shadow-md border-2 border-white">
+      <source src="assets/intro.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+
+  <!-- About Me -->
+  
+  <section id="about" data-aos="fade-up" 
+  data-aos-duration="1000"
+  class="bg-cover bg-center bg-no-repeat text-gray-800 rounded-xl max-w-3xl mx-auto my-6 px-6 py-12 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+  style="background-image: url('assets/maple.jpg')">
+  
+  <h2 class="text-2xl font-bold text-center text-purple-900 border-b-2 border-purple-900 pb-2 mb-4 flex items-center justify-center gap-2 animate-heading">
+    <i class="fas fa-user"></i> About Me
+  </h2>
+  
+  <p class="font-semibold"><strong>Name:</strong> Manish Babulal Devashi</p>
+  <p class="font-semibold"><strong>Location:</strong> Virar</p>
+  <p class="font-semibold"><strong>Education:</strong> St. John College of Engineering and Management</p>
+  <p class="font-semibold"><strong>Languages:</strong> English, Hindi</p>
+</section>
+
+
+  <!-- Achievements -->
+ 
+<section id="achievements-section" data-aos="fade-up" 
+  data-aos-duration="1000" class="bg-cover bg-center bg-no-repeat text-gray-800 rounded-xl max-w-3xl mx-auto my-6 px-6 py-12 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+  style="background-image: url('assets/growth.jpg')">
+  <h2 class="text-2xl font-bold mb-4 text-center text-indigo-700 border-b-2 border-indigo-700 pb-2">
+    <i class="fas fa-trophy mr-2"></i>Achievements
+  </h2>
+  <ul id="achievements-list" class="list-disc pl-6 space-y-2 text-lg text-black-1000">
+    <!-- Items will be added by JS -->
+  </ul>
+</section>
+
+
+  <!-- Future Goals -->
+<section id="goals" data-aos="fade-up" 
+  data-aos-duration="1000"
+  class="bg-cover bg-center bg-no-repeat text-gray-800 rounded-xl max-w-3xl mx-auto my-6 px-6 py-12 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+  style="background-image: url('assets/lake.jpg')">
+  
+  <h2 class="text-2xl font-bold text-center text-purple-900 border-b-2 border-purple-900 pb-2 mb-4 flex items-center justify-center gap-2 animate-heading">
+    <i class="fas fa-bullseye"></i> Goals
+  </h2>
+  
+  <ul class="font-semibold list-disc list-inside">
+    <li>Secure a software development position in a reputed company.</li>
+    <li>Contribute to open-source projects.</li>
+    <li>Continue learning and growing as a full-stack developer.</li>
+  </ul>
+</section>
+
+  <!-- Personal Side -->
+  
+<section id="personal"  data-aos="fade-up" 
+  data-aos-duration="1000"
+  class="bg-white bg-cover bg-center bg-no-repeat text-gray-800 rounded-xl max-w-3xl mx-auto my-6 px-6 py-12 shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl"
+  style="background-image: url('assets/laptop.jpg')">
+  
+  <h2 class="text-2xl font-bold text-center text-purple-900 border-b-2 border-purple-900 pb-2 mb-4 flex items-center justify-center gap-2 animate-heading">
+    <i class="fas fa-heart"></i> Personal Side
+  </h2>
+  <ul class="font-semibold list-disc list-inside text-white-900">
+  <li><strong>Hobbies:</strong> Reading, Gaming, Coding</li>
+    <li><strong>Role Modes:</strong> A.P.J Abdul Kalam — for his vision and humility</li>
+    <li><strong>Favourite Books:</strong> A Monk who sold his Ferrari</li>
+    <li><strong>Favourite Websites:</strong> freeCodeCamp.org</li>
+   <li> <strong>Favourite Startups:</strong> Zerodha — revolutionizing stock trading in India</li>
+    <li><strong>Volunteering:</strong> Participated in Cleanlinesss awareness drive in my locality</li>
+
+  </p>
+  </ul>
+</section>
+<section id="contact"  data-aos="fade-up" 
+  data-aos-duration="1000"
+  class="bg-[#1a90d0] text-white rounded-xl max-w-3xl mx-auto my-6 px-6 py-10 shadow-md text-center transition duration-300 hover:shadow-lg">
+
+  <h2 class="text-2xl font-bold border-b-2 border-white pb-2 mb-6 flex items-center justify-center gap-2 animate-heading">
+    <i class="fas fa-envelope"></i> Contact Me
+  </h2>
+
+  <div class="flex justify-center flex-wrap gap-6 text-2xl mb-6">
+    <a href="https://www.instagram.com/manish_devasi_1" target="_blank" title="Instagram"
+       class="hover:text-pink-400 transition-transform hover:scale-110">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/manish-devasi-96b9181b9" target="_blank" title="LinkedIn"
+       class="hover:text-[#0077b5] transition-transform hover:scale-110">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="mailto:manishdevasi99888@gmail.com" title="Gmail"
+       class="hover:text-red-400 transition-transform hover:scale-110">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/Manish-4" target="_blank" title="GitHub"
+       class="hover:text-gray-300 transition-transform hover:scale-110">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="tel:+917414970753" title="Call"
+       class="hover:text-green-200 transition-transform hover:scale-110">
+      <i class="fas fa-phone-alt"></i>
+    </a>
+    <a href="https://wa.me/+917414970753" target="_blank" title="WhatsApp"
+       class="hover:text-green-400 transition-transform hover:scale-110">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <div class="rounded-lg overflow-hidden shadow-lg max-w-full mt-6">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5320.208974289944!2d72.77563956503676!3d19.457470542678344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7aa464177e23f%3A0xc2039df7a985c10d!2sChal%20Pet%2C%20Agashi%2C%20Virar%20West%2C%20Virar%2C%20Maharashtra%20401301!5e0!3m2!1sen!2sin!4v1747720414413!5m2!1sen!2sin"
+      width="100%" 
+      height="240" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade"
+      class="w-full h-[240px] border-2 border-white rounded-lg">
+    </iframe>
+  </div>
+</section>
+
+
+
+  
+  
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Manish | Connect on <a href="https://github.com/Manish-4" target="_blank">GitHub</a></p>
+  </footer>
+<script>
+  const headings = document.querySelectorAll('.animate-heading');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  headings.forEach(h => observer.observe(h));
+</script>
+<script>
+  fetch('data.json')
+    .then(response => response.json())
+    .then(data => {
+      const list = document.getElementById('achievements-list');
+      data.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = `${item.title} (${item.year})`;
+        list.appendChild(li);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading JSON:', error);
+    });
+</script>
+
+
+<script>
+  const toggle = document.getElementById('theme-toggle');
+  const icon = document.getElementById('theme-icon');
+
+  // Load theme preference
+  if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark');
+    toggle.checked = true;
+    icon.classList.remove('fa-sun');
+    icon.classList.add('fa-moon');
+    icon.classList.remove('text-yellow-400');
+    icon.classList.add('text-blue-400');
+  }
+
+  toggle.addEventListener('change', () => {
+    if (toggle.checked) {
+      document.body.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+      icon.classList.remove('fa-sun');
+      icon.classList.add('fa-moon');
+      icon.classList.remove('text-yellow-400');
+      icon.classList.add('text-blue-400');
+    } else {
+      document.body.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+      icon.classList.remove('fa-moon');
+      icon.classList.add('fa-sun');
+      icon.classList.remove('text-blue-400');
+      icon.classList.add('text-yellow-400');
+    }
+  });
+</script>
+<!-- AOS JS -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
